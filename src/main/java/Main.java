@@ -39,6 +39,11 @@ class Main {
             s.addStudent(new Student(name, age));
             break;
           case 2:
+            System.out.println("Lista studentów:");
+            var students = s.getStudents();
+            for (Student current : students) {
+              System.out.println(current.ToString());
+            }
             break;
           case 3:
             choice = false;
