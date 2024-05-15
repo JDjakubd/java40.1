@@ -14,8 +14,6 @@ class Main {
   public static void main(String[] args) {
     try {
       Service s = new Service();
-      s.addStudent(new Student("Krzysztof", 20));
-      s.addStudent(new Student("Janusz", 40));
 
       Scanner scanner = new Scanner(System.in);
       boolean choice = true;
@@ -33,10 +31,13 @@ class Main {
             System.out.println("Dodaj nowego studenta:");
             System.out.print("Imię: ");
             String name = scanner.next();
+            System.out.print("Nazwisko: ");
+            String surname = scanner.next();
             System.out.print("Wiek: ");
             int age = scanner.nextInt();
+            
             scanner.nextLine();
-            s.addStudent(new Student(name, age));
+            s.addStudent(new Student(name, surname, age));
             break;
           case 2:
             System.out.println("Lista studentów:");

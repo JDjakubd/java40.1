@@ -1,11 +1,1 @@
-Krzysztof 20
-Janusz 40
-Krzysztof 20
-Janusz 40
-Krzysztof 20
-Janusz 40
-Krzysztof 20
-Janusz 40
-Krzysztof 20
-Janusz 40
-Jakub 21
+jakub dobosz 21
