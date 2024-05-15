@@ -35,9 +35,11 @@ class Main {
             String surname = scanner.next();
             System.out.print("Wiek: ");
             int age = scanner.nextInt();
+            System.out.print("Data urodzenia: ");
+            String dateofbirth = scanner.next();
             
             scanner.nextLine();
-            s.addStudent(new Student(name, surname, age));
+            s.addStudent(new Student(name, surname, age, dateofbirth));
             break;
           case 2:
             System.out.println("Lista studentów:");
