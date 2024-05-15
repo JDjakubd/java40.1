@@ -21,7 +21,8 @@ class Main {
         System.out.println("Menu:");
         System.out.println("1. Dodaj nowego studenta");
         System.out.println("2. Wypisz wszystkich studentów");
-        System.out.println("3. Wyjście");
+        System.out.println("3. Wyszukaj studenta");
+        System.out.println("4. Wyjście");
         System.out.print("Wybierz opcję: ");
 
         int choice2 = scanner.nextInt();
@@ -49,6 +50,15 @@ class Main {
             }
             break;
           case 3:
+            System.out.println("Podaj dane studenta do wyszukania:");
+            String searchSurname = scanner.nextLine();
+            Student foundStudent = s.findStudentByName(searchSurname);
+            if(foundStudent != null){
+              System.out.println(foundStudent.ToString()); }
+        else { System.out.println("Student o tym nazwisku nie znaleziony"); 
+}
+            break;
+            case 4:
             choice = false;
             break;
           default:
